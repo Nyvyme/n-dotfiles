@@ -1,0 +1,42 @@
+{
+  // General Settings
+
+  // Position TOP
+  "layer": "top",
+  "margin-top": 5,
+  "margin-botton": 0,
+  "height": 12,
+  "spacing": 10,
+
+  // Load Modules
+  "include": ["~/.config/waybar/modules.json"],
+
+  // Modules Left
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  // Modules Center
+  "modules-center": [
+    "hyprland/window"
+  ],
+
+  // Modules Right
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "hyprland/language",
+    "group/hardware",
+    "clock"
+  ],
+
+  // Hardware
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "memory",
+      "network"
+    ]
+  }
+}

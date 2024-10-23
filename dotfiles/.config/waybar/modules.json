@@ -1,0 +1,51 @@
+{
+  // Modules
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true
+  },
+
+  "tray": {
+    "spacing": 10
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": "󰕾"
+    },
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "hyprland/window": {
+    "separate-outputs": true
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "us",
+    "format-ru": "ru",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+  },
+
+  "cpu": {
+    "format": "󰘚 {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "󰒋 {}%"
+  },
+
+  "network": {
+    "tooltip": false
+  },
+
+  "clock": {
+    "format-alt": "{:%Y-%m-%d %a %H:%M:%S}"
+  }
+}
